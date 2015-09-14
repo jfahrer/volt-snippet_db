@@ -1,0 +1,24 @@
+<:Title>
+  snippets index
+
+<:Body>
+  <h1>Snippets</h1>
+
+  <table class="table">
+    <tr>
+      <th>Name</th>
+      <th>Language</th>
+      <th>Edit</th>
+      <th></th>
+    </tr>
+    {{ snippets.each do |snippet| }}
+      <tr>
+        <td>{{ snippet.name }}</td>
+        <td>{{ snippet.language }}</td>
+        <td><a href="/snippets/{{ snippet.id }}/edit">Edit</a></td>
+        <td><a e-click="delete_snippet(snippet)">Delete</a></td>
+      </tr>
+    {{ end }}
+  </table>
+
+  <a href="/snippets/new" class="btn btn-primary">Add snippet</a>

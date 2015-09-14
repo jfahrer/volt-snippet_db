@@ -1,0 +1,10 @@
+<:Title>
+  New snippet
+
+<:Body>
+  <h1>New snippet</h1>
+  <:fields:text value="{{ name }}" />
+  <:fields:select value="{{ language }}" options="{{ ['Ruby', 'Java', 'PHP'] }}" />
+  <:fields:textarea value="{{ code }}" />
+  
+  <input type="submit" value="Save snippet" e-click="save_snippet">
