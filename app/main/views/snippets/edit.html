@@ -4,11 +4,10 @@
 <:Body>
   <h1>Editing {{ name }}</h1>
   <:fields:text value="{{ name }}" />
-  <:fields:select value="{{ language }}" options="{{ ['Ruby', 'Java', 'PHP'] }}" />
+  <:fields:select value="{{ language }}" options="{{ ['ruby', 'java', 'php'] }}" />
   <:fields:textarea value="{{ code }}" />
   
   <input type="submit" value="Save snippet" e-click="save_snippet">
-
 
   <hr>
 

@@ -29,5 +29,11 @@
   Object id: {{ controller.object_id }}
 
   {{ if current_snippet }}
-    <:code_highlight>{{ current_snippet.code }}</:code_highlight>
+    <:show />
   {{ end }}
+
+<:Show>
+  <h3>{{ current_snippet.name }}</h3>
+  <:code_highlight language="{{ current_snippet.language }}">{{ current_snippet.code }}</:code_highlight>
+
+  Object id: {{ controller.object_id }}

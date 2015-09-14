@@ -1,3 +1,21 @@
+GIT
+  remote: git://github.com/voltrb/volt.git
+  revision: facdaee976692f02ba93025fe9980cd74804b33c
+  specs:
+    volt (0.9.5)
+      bcrypt (~> 3.1.9)
+      bundler (>= 1.5)
+      concurrent-ruby (= 0.8.0)
+      configurations (~> 2.0.0.pre)
+      faye-websocket (~> 0.10.0)
+      listen (~> 3.0.1)
+      opal (>= 0.8.0, < 0.9)
+      pry (~> 0.10.1)
+      rack (~> 1.5.0)
+      sass (~> 3.4.15)
+      sprockets-helpers (~> 1.2.1)
+      thor (~> 0.19.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -129,19 +147,6 @@ GEM
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    volt (0.9.5)
-      bcrypt (~> 3.1.9)
-      bundler (>= 1.5)
-      concurrent-ruby (= 0.8.0)
-      configurations (~> 2.0.0.pre)
-      faye-websocket (~> 0.10.0)
-      listen (~> 3.0.1)
-      opal (>= 0.8.0, < 0.9)
-      pry (~> 0.10.1)
-      rack (~> 1.5.0)
-      sass (~> 3.4.15)
-      sprockets-helpers (~> 1.2.1)
-      thor (~> 0.19.0)
     volt-bootstrap (0.1.0)
     volt-bootstrap_jumbotron_theme (0.1.0)
     volt-code_highlight (0.2.0)
@@ -179,7 +184,7 @@ DEPENDENCIES
   selenium-webdriver (~> 2.47.1)
   thin (~> 1.6.0)
   uglifier (>= 2.4.0)
-  volt (= 0.9.5)
+  volt!
   volt-bootstrap (~> 0.1.0)
   volt-bootstrap_jumbotron_theme (~> 0.1.0)
   volt-code_highlight

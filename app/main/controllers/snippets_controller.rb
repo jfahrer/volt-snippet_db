@@ -19,14 +19,16 @@ module Main
     end
 
     def delete_snippet(snippet)
-      snippet.destroy.fail do |err|
+      snippet.destroy.then do
+        params.id = nil
+      end.fail do |err|
         flash._errors << err
       end
     end
 
     def save_snippet
-      self.model.save!.then do 
-        redirect_to("/snippets")
+      self.model.save!.then do |snippet|
+        redirect_to("/snippets/#{snippet.id}")
       end.fail do |err|
         flash._errors "Failed: #{err}"
       end
