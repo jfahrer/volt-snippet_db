@@ -11,7 +11,11 @@ module Main
     end
 
     def edit
-      self.model = store.snippets.where(id: params.id).first #.buffer
+      self.model = current_snippet.buffer
+    end
+
+    def current_snippet
+      store.snippets.where(id: params.id).first
     end
 
     def delete_snippet(snippet)

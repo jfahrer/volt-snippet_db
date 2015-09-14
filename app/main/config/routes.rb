@@ -2,8 +2,9 @@
 
 client '/about', action: 'about'
 
-client '/snippets/{{ id }}/edit', component: 'main', controller: 'snippets', action: 'edit'
 client '/snippets/new', component: 'main', controller: 'snippets', action: 'new'
+client '/snippets/{{ id }}/edit', component: 'main', controller: 'snippets', action: 'edit'
+client '/snippets/{{ id }}', component: 'main', controller: 'snippets', action: 'index'
 client '/snippets', component: 'main', controller: 'snippets', action: 'index'
 
 # Routes for login and signup, provided by user_templates component gem

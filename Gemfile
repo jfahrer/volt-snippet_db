@@ -58,3 +58,5 @@ group :production do
   # Provides precompiled binaries for image compression
   gem 'image_optim_pack'
 end
+
+gem 'volt-code_highlight'
