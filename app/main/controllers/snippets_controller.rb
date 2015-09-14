@@ -2,6 +2,10 @@ module Main
   class SnippetsController < Volt::ModelController
     model :store
 
+    def snippets
+      store.snippets.all
+    end
+
     def new
       self.model = store.snippets.buffer
     end
